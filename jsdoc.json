@@ -1,0 +1,44 @@
+{
+    "plugins": [
+      "jsdoc-http-plugin"
+    ],
+    "recurseDepth": 10,
+    "source": {
+      "include": [
+        "src"
+      ],
+      "includePattern": ".js$",
+      "excludePattern": "(node_modules|docs)"
+    },
+    "templates": {
+      "cleverLinks": false,
+      "monospaceLinks": false,
+      "name": "Template Express Documentation",
+      "footerText": "My awesome footer text",
+      "default": {
+        "staticFiles": {
+          "include": [
+            "./public"
+          ]
+        }
+      },
+      "css": [
+        "css/custom.css"
+      ],
+      "logo": {
+        "url": "https://play-lh.googleusercontent.com/TIRhCRgQYm-UiXf5mftWYivXXgoGRSgSie_-9FVA1D9pL21w8Egb2lYnvukd3enY4OOf",
+        "width": "25px",
+        "height": "25px",
+        "link": "http://10.11.11.207:10088/SDP_SCMX/territorial-analytics-express"
+      }
+    },
+    "opts": {
+      "encoding": "utf8",
+      "destination": "./public/doc",
+      "recurse": true,
+      "verbose": true,
+      "template": "node_modules/tui-jsdoc-template",
+      "readme": "./README.md",
+      "tutorials": "./public/tutorials"
+    }
+  }
